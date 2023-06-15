@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>제어문 - 조건문 </h3>
+    <script>
+        // 형식1 : if(조건식){...}
+        // 형식2 : if(조건식){...} else{...}
+        // 형식3 : if(조건식){...} else if(조건문){...}    
+
+        score = 120;
+        if(score>=50){
+            document.write("합격입니다 <br>");
+            document.write("점수는" + score);
+        }
+        else if(score>0){
+            document.write("불합격입니다 <br>");
+            document.write("점수는" + score);
+        }
+        else{
+            document.write("빵점입니다<br>");
+            document.write("다시공부하세요");
+        }
+    </script>
+</body>
+</html>

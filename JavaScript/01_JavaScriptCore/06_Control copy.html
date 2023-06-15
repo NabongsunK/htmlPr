@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>제어문 - 조건문 </h3>
+    <script>
+        // 형식1 : if(조건식){...}
+        // 형식2 : if(조건식){...} else{...}
+        // 형식3 : if(조건식){...} else if(조건문){...}    
+
+        let score = 50;
+        let grade = null;
+      
+        if(score>=90){
+            grade = "A";
+            if(score % 10 >= 7 || score == 100){
+                grade += "+";
+            }
+            else if(score % 10 < 4 ){
+                grade += "-";
+            }
+            else{
+                grade += "0";
+            }
+        }
+        else if(score>=80){
+            grade = "B";
+            if(score % 10 >= 7){
+                grade += "+";
+            }
+            else if(score % 10 < 4 ){
+                grade += "-";
+            }
+            else{
+                grade += "0";
+            }
+        }
+        else if(score>=70){
+            grade = "C";
+            if(score % 10 >= 7){
+                grade += "+";
+            }
+            else if(score % 10 < 4 ){
+                grade += "-";
+            }
+            else{
+                grade += "0";
+            }
+        }
+        else{
+            grade = "F";
+        }
+        document.write("점수: " + score +  " 등급: " + grade)
+    </script>
+</body>
+</html>

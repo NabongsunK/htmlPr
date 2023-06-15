@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>조건문 - switch </h3>
+    <script>
+        su = 0;
+        switch(su){
+            case(1): document.write("일"); break;
+            case(2): document.write("이"); break;
+            case(3): document.write("삼"); break;
+            case(4): document.write("사"); break;
+            case(5): document.write("오"); break;
+        }
+    </script>
+    <script>
+        let session = prompt("관심세션을 선택해주세요(1.마케팅/2.개발/3.디자인)");
+        let sessionNum = parseInt(session);
+        switch(sessionNum){
+            case(1): 
+                document.write("<h3>마케팅 세션은 <strong>201호</strong></h3>"); 
+                break;
+            case(2): 
+                document.write("<h3>개발 세션은 <strong>301호</strong></h3>"); 
+                break;
+            case(3): 
+                document.write("<h3>디자인 세션은 <strong>401호</strong></h3>"); 
+                break;
+        }
+
+        let a=5.4;
+        switch(a){
+            case(10):
+                document.write("10");
+                break
+            case("A"):
+                document.write("A");
+                break
+            case('a'):
+                document.write('a');
+                break
+            case(5.4):
+                document.write("5.4");
+                break
+        }
+
+    </script>
+</body>
+</html>
